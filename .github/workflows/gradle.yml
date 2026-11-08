@@ -30,7 +30,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build needsofnature module
-        run: ./gradlew build
+        run: ./gradlew.bat clean build --no-daemon --console=plain
 
       - name: Upload build artifacts
         if: success()
